@@ -24,18 +24,18 @@ const Home = async () => {
   const data = await getData();
 
   return (
-    <div className="w-screen py-20 flex justify-center flex-col items-center">
-      <span className="text-3xl font-extrabold uppercase">
+    <div className="w-screen  flex justify-center flex-col items-center">
+      <span className="text-3xl font-extrabold uppercase py-10">
         What Do I Do
       </span>
 
-      <div className="flex justify-center flex-col items-center w-[1000px] ">
+      <div className="flex justify-center flex-col items-center lg:w-[1000px] ">
         <AddTodo />
         <div className="flex flex-col gap-5 items-center justify-center mt-10 w-full">
           {
             data.map((todos, id) => (
               <div className="w-full" key={id}>
-                <Todo todo={todos}/>
+                <Todo todo={todos} />
               </div>
             ))
           }

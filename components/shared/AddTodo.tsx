@@ -6,7 +6,7 @@ import Input from "../ui/Input";
 
 const AddTodo = () => {
     return (
-        <Form action={create}  className="w-1/2 m-auto">
+        <Form action={create} className="w-full m-auto">
             <div className="flex">
                 <Input
                     name="input"
