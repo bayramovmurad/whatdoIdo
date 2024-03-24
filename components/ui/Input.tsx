@@ -11,6 +11,10 @@ const Input = ({
   placeholder,
   value,
 }: inputProps) => {
+
+  // if(value == ""){
+  //   alert("sikdirersen")
+  // }
   return (
     <>
       <input
